@@ -23,17 +23,35 @@ const Volunteers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {volunteerRoles.map((role, index) => (
-            <Card key={index} className="bg-gradient-to-br from-ai-blue to-ai-dark border-ai-purple/20 hover:shadow-lg hover:shadow-ai-teal/20 transition-all duration-300">
-              <CardHeader className="pb-2 flex items-center justify-center text-ai-teal">
-                <div className="mb-2">{role.icon}</div>
-                <CardTitle className="text-2xl">{role.title}</CardTitle>
+            <Card 
+              key={index} 
+              className="overflow-hidden border-none transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              style={{
+                background: role.gradient,
+                boxShadow: "0 10px 20px rgba(0,0,0,0.15)"
+              }}
+            >
+              <div className="absolute top-0 right-0 w-24 h-24 opacity-20">
+                <div className="text-white/20 w-full h-full flex items-center justify-center scale-150">
+                  {role.icon}
+                </div>
+              </div>
+              <CardHeader className="pb-2 relative z-10">
+                <div className="text-white bg-ai-dark/40 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-3">
+                  {role.icon}
+                </div>
+                <CardTitle className="text-2xl font-bold text-white">{role.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-white/70 text-sm">{role.description}</CardDescription>
+              <CardContent className="relative z-10">
+                <CardDescription className="text-white font-medium text-base" 
+                  dangerouslySetInnerHTML={{ __html: role.highlightedDescription }}
+                />
               </CardContent>
-              <CardFooter>
-                <Button className="w-full bg-ai-teal/80 hover:bg-ai-teal/70 text-white">
-                  ¡Me interesa unirme!
+              <CardFooter className="relative z-10">
+                <Button 
+                  className="w-full bg-white hover:bg-white/90 text-ai-dark font-bold py-3"
+                >
+                  {role.buttonText}
                 </Button>
               </CardFooter>
             </Card>

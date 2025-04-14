@@ -22,14 +22,25 @@ const Index = () => {
       });
     });
 
-    // Update section title colors to match our new color scheme
-    document.querySelectorAll("h2 span").forEach((span) => {
-      span.classList.add("text-ai-purple"); // Apply secondary color to highlighted parts
+    // Animation for volunteer cards on scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('#volunteers .card').forEach((card) => {
+      observer.observe(card);
     });
 
-    document.querySelectorAll("p.text-ai-teal").forEach((p) => {
-      p.classList.add("text-ai-teal"); // Apply primary color to subtitles
-    });
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
