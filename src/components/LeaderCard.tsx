@@ -1,23 +1,26 @@
-
-import React from 'react';
+import React from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 interface LeaderCardProps {
   name: string;
   role: string;
   imageSrc?: string;
+  url: string;
 }
 
-const LeaderCard = ({ name, role, imageSrc }: LeaderCardProps) => {
+const LeaderCard = ({ name, role, imageSrc, url }: LeaderCardProps) => {
   const initials = name
-    .split(' ')
-    .map(part => part[0])
-    .join('')
+    .split(" ")
+    .map((part) => part[0])
+    .join("")
     .toUpperCase();
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gradient-to-br from-ai-dark to-ai-blue/70 border border-ai-purple/20 rounded-lg transition-transform hover:-translate-y-2 duration-300 hover:shadow-lg">
-      <Avatar className="w-32 h-32 mb-4 grayscale">
+    <div
+      className="flex flex-col items-center p-6 bg-gradient-to-br from-ai-dark to-ai-blue/70 border border-ai-teal/20 rounded-lg transition-transform hover:-translate-y-2 duration-300 hover:shadow-lg hover:cursor-pointer"
+      onClick={() => window.open(url, "_blank")}
+    >
+      <Avatar className="w-32 h-32 mb-4">
         {imageSrc ? (
           <AvatarImage src={imageSrc} alt={name} className="object-cover" />
         ) : (

@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <section id="contact" className="py-20">
       <div className="px-4 sm:container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-audiowide mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-audiowide mb-4 text-center">
           Únete a nuestra <span className="text-ai-teal">Comunidad</span>
         </h2>
         
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xl mb-12">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-lg md:text-xl mb-12 text-white/80">
             Únete a nuestra comunidad y mantente al día con las últimas novedades en inteligencia artificial
           </p>
           

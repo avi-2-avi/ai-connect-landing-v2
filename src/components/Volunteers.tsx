@@ -8,14 +8,14 @@ const Volunteers = () => {
   return (
     <section id="volunteers" className="py-20">
       <div className="px-4 md:px-12 lg:px-24 sm:container mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Programa de <span className="text-ai-teal">Voluntarios</span>
           </h2>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80">
+          <p className="text-lg md:text-xl max-w-2xl mx-auto text-white/80">
             ¿Estás listo para hacer una diferencia y aportar tu energía a proyectos innovadores? 
           </p>
-          <p className="text-lg md:text-xl max-w-3xl mt-4 mx-auto text-white/80">
+          <p className="text-lg md:text-xl max-w-2xl mt-4 mx-auto text-white/80">
             Únete como voluntario de AI Connect, aprende junto a un equipo eficiente y sé parte 
             de una comunidad dinámica que impulsa el cambio.
           </p>
