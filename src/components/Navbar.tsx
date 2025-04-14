@@ -59,7 +59,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("pillars")}
             className="text-white hover:text-ai-teal transition-colors cursor-pointer"
           >
-            Nuestros Pilares
+           Pilares
           </a>
           <a
             onClick={() => scrollToSection("schedule")}
@@ -106,7 +106,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("pillars")}
               className="text-white hover:text-ai-teal transition-colors cursor-pointer"
             >
-              Nuestros Pilares
+              Pilares
             </a>
             <a
               onClick={() => scrollToSection("schedule")}
