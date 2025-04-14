@@ -63,10 +63,10 @@ const Navbar = () => {
             Eventos
           </a>
           <a
-            onClick={() => scrollToSection("leaders")}
+            onClick={() => scrollToSection("volunteers")}
             className="text-white hover:text-ai-teal transition-colors cursor-pointer"
           >
-            AI Leaders
+            Voluntarios
           </a>
           <a
             onClick={() => scrollToSection("contact")}
@@ -110,10 +110,10 @@ const Navbar = () => {
               Eventos
             </a>
             <a
-              onClick={() => scrollToSection("leaders")}
+              onClick={() => scrollToSection("volunteers")}
               className="text-white hover:text-ai-teal transition-colors cursor-pointer"
             >
-              AI Leaders
+              Voluntarios
             </a>
             <a
               onClick={() => scrollToSection("contact")}

@@ -63,7 +63,7 @@ const Schedule = () => {
     <section id="schedule" className="py-20 px-4">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-audiowide mb-12 text-center">
-          Programa de <span className="text-ai-teal">eventos</span>
+          Cronograma de <span className="text-ai-teal">eventos</span>
         </h2>
 
         <div className="max-w-6xl mx-auto">
