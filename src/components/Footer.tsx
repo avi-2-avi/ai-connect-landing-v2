@@ -6,8 +6,8 @@ import { socialLinks } from '@/data/socialLinks';
 const Footer = () => {
 
   return (
-    <section id="contact" className="py-20 px-4">
-      <div className="container mx-auto">
+    <section id="contact" className="py-20">
+      <div className="px-4 sm:container mx-auto">
         <h2 className="text-3xl md:text-4xl font-audiowide mb-12 text-center">
           Únete a nuestra <span className="text-ai-teal">Comunidad</span>
         </h2>

@@ -39,7 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo.avif" alt="AI CONNECT" className="w-52 hover:cursor-pointer" onClick={() => scrollToSection("hero")} />
+          <img
+            src="/logo.avif"
+            alt="AI CONNECT"
+            className="w-52 hover:cursor-pointer"
+            onClick={() => scrollToSection("hero")}
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -51,10 +56,10 @@ const Navbar = () => {
             Quienes Somos
           </a>
           <a
-            onClick={() => scrollToSection("objectives")}
+            onClick={() => scrollToSection("pillars")}
             className="text-white hover:text-ai-teal transition-colors cursor-pointer"
           >
-            Que Hacemos
+            Nuestros Pilares
           </a>
           <a
             onClick={() => scrollToSection("schedule")}
@@ -98,10 +103,10 @@ const Navbar = () => {
               Quienes Somos
             </a>
             <a
-              onClick={() => scrollToSection("objectives")}
+              onClick={() => scrollToSection("pillars")}
               className="text-white hover:text-ai-teal transition-colors cursor-pointer"
             >
-              Que Hacemos
+              Nuestros Pilares
             </a>
             <a
               onClick={() => scrollToSection("schedule")}

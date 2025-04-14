@@ -6,8 +6,8 @@ import { volunteerRoles } from "@/data/volunteers";
 
 const Volunteers = () => {
   return (
-    <section id="volunteers" className="py-20 px-6 md:px-12 lg:px-24">
-      <div className="container mx-auto">
+    <section id="volunteers" className="py-20">
+      <div className="px-4 md:px-12 lg:px-24 sm:container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Programa de <span className="text-ai-teal">Voluntarios</span>
@@ -21,7 +21,7 @@ const Volunteers = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {volunteerRoles.map((role, index) => (
             <Card 
               key={index} 
@@ -37,19 +37,19 @@ const Volunteers = () => {
                 </div>
               </div>
               <CardHeader className="pb-2 relative z-10">
-                <div className="text-white bg-ai-dark/40 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-3">
+                <div className="text-white bg-ai-dark/20 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-3">
                   {role.icon}
                 </div>
                 <CardTitle className="text-2xl font-bold text-white">{role.title}</CardTitle>
               </CardHeader>
               <CardContent className="relative z-10">
-                <CardDescription className="text-white font-medium text-base" 
+                <CardDescription className="text-white text-base" 
                   dangerouslySetInnerHTML={{ __html: role.highlightedDescription }}
                 />
               </CardContent>
               <CardFooter className="relative z-10">
                 <Button 
-                  className="w-full bg-white hover:bg-white/90 text-ai-dark font-bold py-3"
+                  className="bg-white break-works hover:bg-white/90 text-ai-dark/80 font-bold py-3 shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
                 >
                   {role.buttonText}
                 </Button>

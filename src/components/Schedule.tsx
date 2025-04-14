@@ -19,7 +19,10 @@ const Schedule = () => {
 
   function convertTo24Hour(time: string): string {
     const [hourMin, period] = time.split(" ");
-    let [hours, minutes] = hourMin.split(":").map(Number);
+    const [rawHours, rawMinutes] = hourMin.split(":").map(Number);
+
+    let hours = rawHours;
+    const minutes = rawMinutes;
 
     if (period.toUpperCase() === "PM" && hours !== 12) hours += 12;
     if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
@@ -45,7 +48,10 @@ const Schedule = () => {
 
     const time24 = convertTo24Hour(event.endTime);
 
-    const dateStr = `${year}-${String(monthIndex + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}T${time24}:00-05:00`; // UTC-5 Lima
+    const dateStr = `${year}-${String(monthIndex + 1).padStart(
+      2,
+      "0"
+    )}-${String(day).padStart(2, "0")}T${time24}:00-05:00`; // UTC-5 Lima
     const eventEnd = new Date(dateStr);
     const now = new Date();
 
@@ -60,8 +66,8 @@ const Schedule = () => {
   }));
 
   return (
-    <section id="schedule" className="py-20 px-4">
-      <div className="container mx-auto">
+    <section id="schedule" className="py-20">
+      <div className="px-4 sm:container mx-auto">
         <h2 className="text-3xl md:text-4xl font-audiowide mb-12 text-center">
           Cronograma de <span className="text-ai-teal">eventos</span>
         </h2>
@@ -127,7 +133,9 @@ const Schedule = () => {
                         </span>
                       </div>
 
-                      <p className="text-sm text-white/70 mb-4">{event.date} | {event.startTime}-{event.endTime}</p>
+                      <p className="text-sm text-white/70 mb-4">
+                        {event.date} | {event.startTime}-{event.endTime}
+                      </p>
                       <p className="mb-6">{event.description}</p>
 
                       {event.registrationUrl && event.status !== "past" && (
