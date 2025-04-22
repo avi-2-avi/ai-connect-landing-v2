@@ -7,7 +7,7 @@ export const pillarsData = {
       "Creamos conexiones auténticas y espacios de colaboración donde las ideas y el talento se unen para impulsar el impacto colectivo.",
     leaders: [
       { name: "Cristian Gomez", role: "CEO @ Aicon", photo: "cristiangomez.avif", url: "https://www.linkedin.com/in/cristiangl16j/"},
-      { name: "Ronald Barzola", role: "Innovation Lead @ Scale", photo: "ronaldbarzola.avif", url: "https://www.linkedin.com/in/ronaldbarzola/" },
+      { name: "Ronald Barzola", role: "Impact & Innovation Director @ Scale Incubator", photo: "ronaldbarzola.avif", url: "https://www.linkedin.com/in/ronaldbarzola/" },
       { name: "Cristina Vidal", role: "General Coordinator @ AI Connect", photo: "cristinavidal.avif", url: "https://www.linkedin.com/in/avi2avi/"},
       { name: "Jordy Suarez", role: "Product Owner @ AI Connect", photo: "jordysuarez.avif", url: "https://www.linkedin.com/in/jordy-suarez29/" },
     ],

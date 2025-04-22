@@ -100,7 +100,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("about")}
               className="text-white hover:text-ai-teal transition-colors cursor-pointer"
             >
-              Quienes Somos
+              Quiénes Somos
             </a>
             <a
               onClick={() => scrollToSection("pillars")}
