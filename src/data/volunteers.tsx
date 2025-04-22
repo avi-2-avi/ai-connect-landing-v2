@@ -1,16 +1,6 @@
-import { Blocks, MessageCircleHeart, Handshake, Ticket } from "lucide-react";
+import { MessageCircleHeart, Handshake, Ticket } from "lucide-react";
 
 export const volunteerRoles = [
-  {
-    title: "Tribu Builders",
-    description:
-      "Si eres una persona apasionada por la inteligencia artificial, con habilidades de liderazgo estratégico, organización y gestión de relaciones clave, este rol es para ti. Diseñarás la visión de AI Connect, coordinarás su ejecución anual y supervisarás el crecimiento y el impacto de sus iniciativas.",
-    highlightedDescription:
-      "Persona <strong>apasionada</strong> por la IA con <strong>liderazgo estratégico</strong>. Diseñarás la <strong>visión</strong> de AI Connect, coordinarás su <strong>ejecución</strong> y supervisarás su <strong>crecimiento</strong>.",
-    icon: <Blocks className="w-14 h-14" />,
-    buttonText: "¡Quiero liderar la visión!",
-    gradient: "linear-gradient(135deg, #002A46 0%, #0062A3 100%)",
-  },
   {
     title: "Tribu Marketing & Growth",
     description:
@@ -20,6 +10,7 @@ export const volunteerRoles = [
     icon: <MessageCircleHeart className="w-14 h-14" />,
     buttonText: "¡Quiero impulsar el crecimiento!",
     gradient: "linear-gradient(135deg, #1D4F4A 0%, #2FA398FF 100%)",
+    copyMessage: "¡Hola! Quiero unirme a la Tribu de Marketing & Growth."
   },
   {
     title: "Tribu Alianzas & PR",
@@ -30,6 +21,7 @@ export const volunteerRoles = [
     icon: <Handshake className="w-14 h-14" />,
     buttonText: "¡Quiero crear alianzas!",
     gradient: "linear-gradient(135deg, #4D2C63 0%, #9D5BCAFF 100%)",
+    copyMessage: "¡Hola! Quiero unirme a la Tribu de Alianzas & PR."
   },
   {
     title: "Tribu Eventos & Comunidad",
@@ -40,5 +32,6 @@ export const volunteerRoles = [
     icon: <Ticket className="w-14 h-14" />,
     buttonText: "¡Quiero organizar eventos geniales!",
     gradient: "linear-gradient(135deg, #2C376C 0%, #4F6CC2FF 100%)",
+    copyMessage: "¡Hola! Quiero unirme a la Tribu de Eventos & Comunidad."
   },
 ];
