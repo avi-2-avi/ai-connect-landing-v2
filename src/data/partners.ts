@@ -6,5 +6,4 @@ export const partnersImgs = [
   "scale.avif",
   "co-space.avif",
   "starts-ups-latam.avif",
-  "utec-ventures.avif",
 ];
